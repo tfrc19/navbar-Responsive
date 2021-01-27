@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #000000;
+    color: white; 
+}
+.navbar nav{
+    width: 100%;
+    overflow: hidden;
+}
+.navbar nav .logo{
+    width: 30%;
+    float: left;
+    color: #ffffff;
+}
+.navbar nav .logo h4{
+    padding: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+.navbar nav .menu-hambur{
+    display: none;
+}
+.navbar nav .menu-hambur a{
+    font-size: 30px;
+    color: #000000;
+    
+}
+.navbar nav .nav{
+    width: 70%;
+    overflow: hidden;
+    float: left;
+    
+}
+.navbar nav .nav ul{
+    align-items: center;
+    text-align: end;
+    margin: 0px 20px;
+}
+.navbar nav .nav li{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+.navbar nav .nav li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.navbar nav .nav li a:hover{
+    color: red;
+}
+.mostrarMenu{
+    display: block!important;
+}
+.contenedor{
+    width: 100%;
+}
+.contenedor .parrafo{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.contenedor .parrafo p{
+    text-align: justify;
+    box-shadow: 10px 3px 5px 3px #cccccc;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+@keyframes animacion{
+    from {height: 0px;}
+  to {height: 120px; color: #ffffff;}
+}
+
+@media screen and (max-width:700px){
+
+    .navbar{
+        background-color: #ffffff;
+        opacity: 1;
+        position: relative;;
+    }
+    .navbar nav .logo{
+        width: 20%;
+        text-align: center;
+    }
+    .navbar nav .logo h4{
+        font-size: 20px;
+        text-align: center;
+        margin-left: 10px;
+        color: #000000;
+    }
+    .navbar nav .menu-hambur{
+        display: block;
+        width: 80%;
+        /*background-color: red;*/
+        float: left;
+        text-align: end;
+        
+    }
+    .navbar nav .menu-hambur a{
+        margin-right: 20px;
+    }
+    .navbar nav .nav{
+        width: 100%;
+        background-color: #f2f2f2;
+        text-align: center;
+        overflow: hidden;
+        display: none;
+    }
+    .navbar nav .nav ul{
+        text-align: center;  
+    }
+    .navbar nav .nav li{
+        display: block;
+        padding: 5px 0px;
+    }
+    .navbar nav .nav li a{
+        font-size: 20px;
+        color: #000000;
+        
+
+    }
+
+   
+
+  
+}
